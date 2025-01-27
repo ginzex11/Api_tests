@@ -1,3 +1,4 @@
+#resource/people_api.py
 # People resource object
 from typing import Dict, Any, List
 import logging
@@ -8,15 +9,7 @@ class PeopleAPI:
         self.logger = logging.getLogger(__name__)
     
     def get_person(self, person_id: str) -> Dict[str, Any]:
-        """
-        Get details for a specific person
-        
-        Args:
-            person_id: The ID of the person to retrieve
-            
-        Returns:
-            Dict containing person details
-        """
+       
         self.logger.info(f"Fetching person with ID: {person_id}")
         return self.client.get(f"people/{person_id}")
     

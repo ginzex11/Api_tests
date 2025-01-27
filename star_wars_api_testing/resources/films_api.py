@@ -1,4 +1,5 @@
 # Films resource object
+#recourse/films_api.py
 from typing import Dict, Any, List
 import logging
 
@@ -8,15 +9,7 @@ class FilmsAPI:
         self.logger = logging.getLogger(__name__)
     
     def get_film(self, film_id: str) -> Dict[str, Any]:
-        """
-        Get details for a specific film
         
-        Args:
-            film_id: The ID of the film to retrieve
-            
-        Returns:
-            Dict containing film details
-        """
         self.logger.info(f"Fetching film with ID: {film_id}")
         return self.client.get(f"films/{film_id}")
     

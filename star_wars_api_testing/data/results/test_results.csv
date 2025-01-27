@@ -1,1 +1,21 @@
-test_case,status,details
+{
+  "test_run_date": "2025-01-27T22:53:34.067372",
+  "test_cases": [
+    {
+      "test_name": "Test Suite Execution",
+      "description": "Running all tests in the test suite",
+      "start_time": "2025-01-27T22:53:33.118813",
+      "steps": [
+        {
+          "step": "All tests executed",
+          "expected": "All tests should pass",
+          "actual": "All tests passed",
+          "status": "PASS",
+          "timestamp": "2025-01-27T22:53:34.067372"
+        }
+      ],
+      "end_time": "2025-01-27T22:53:34.067372",
+      "status": "PASS"
+    }
+  ]
+}

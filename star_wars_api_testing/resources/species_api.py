@@ -1,3 +1,4 @@
+# recourse/species_api.py
 # Species resource object
 from typing import Dict, Any, List
 import logging
@@ -8,15 +9,7 @@ class SpeciesAPI:
         self.logger = logging.getLogger(__name__)
     
     def get_species(self, species_id: str) -> Dict[str, Any]:
-        """
-        Get details for a specific species
         
-        Args:
-            species_id: The ID of the species to retrieve
-            
-        Returns:
-            Dict containing species details
-        """
         self.logger.info(f"Fetching species with ID: {species_id}")
         return self.client.get(f"species/{species_id}")
     
