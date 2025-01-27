@@ -1,0 +1,8 @@
+# Test input data
+person_id,film_id,planet_id,notes
+1,1,1,Luke Skywalker in A New Hope
+1,2,1,Luke Skywalker in Empire Strikes Back
+2,1,1,C-3PO in A New Hope
+3,1,1,R2-D2 in A New Hope
+4,1,1,Darth Vader in A New Hope
+5,2,14,Leia Organa in Empire Strikes Back
